@@ -15,9 +15,9 @@ session_start();
 // Home page rendering
 $f3->route('GET /', function() {
     $view = new Template();
-    //echo $view->render('views/home.html');
+    echo $view->render('views/home.html');
 
-    echo "My Pets";
+
 });
 
 // Run fat free
