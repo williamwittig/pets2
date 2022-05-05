@@ -8,16 +8,16 @@
 </head>
 <body>
     <h1>Order Form</h1>
-
+    <div class="col-6 offset-3 text-center">
     <form method="post" action="order2">
-        <div class="form-group">
+        <div class="form-group mt-3">
             <label for="petType">What kind of pet would you like to order</label>
             <input type="text" class="form-control" id="petType" name="petType">
         </div>
-        <div class="form-row">
+        <div class="form-row mt-3 mb-3">
             <div class="form-group col-md-4">
                 <label for="inputColor">Select a color</label>
-                <select id="inputColor" name="inputColor" class="form-control">
+                <select id="inputColor" name="inputColor" class="form-select">
                     <option selected>Choose...</option>
                     <option>Purple</option>
                     <option>Black and Tan</option>
@@ -27,6 +27,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Place Order</button>
     </form>
+    </div>
 
     <!--Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
