@@ -1,0 +1,16 @@
+{
+  "name" : "GreenRiverDev/328/pets2",
+  "authors" : [
+    {
+      "name": "William Wittig",
+      "email": "wittig.william@student.greenriver.edu"
+    },
+    {
+      "name": "Rwnee Holter",
+      "email": "Holter.renee@student.greenriver.edu"
+    }
+  ],
+  "require" : {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
