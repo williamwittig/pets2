@@ -32,11 +32,19 @@ $f3->route('POST /order2', function() {
     $view = new Template();
     echo $view->render('views/pet-order2.html');
 });
+$f3->route('POST /order3', function() {
+    var_dump($_POST);
+
+    $_SESSION['petName'] = $_POST['petName'];
+
+    $view = new Template();
+    echo $view->render('views/pet-order3.html');
+});
 
 $f3->route('POST /summary', function() {
     var_dump($_POST);
 
-    $_SESSION['petName'] = $_POST['petName'];
+
 
     $view = new Template();
     echo $view->render('views/summary.html');
