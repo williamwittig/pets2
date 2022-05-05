@@ -9,15 +9,15 @@
 <body>
     <h1>Order Form</h1>
 
-    <form>
+    <form method="post" action="order2">
         <div class="form-group">
             <label for="petType">What kind of pet would you like to order</label>
-            <input type="text" class="form-control" id="petType">
+            <input type="text" class="form-control" id="petType" name="petType">
         </div>
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label for="inputColor">Select a color</label>
-                <select id="inputColor" class="form-control">
+                <select id="inputColor" name="inputColor" class="form-control">
                     <option selected>Choose...</option>
                     <option>Purple</option>
                     <option>Black and Tan</option>
@@ -25,7 +25,7 @@
                 </select>
             </div>
         </div>
-        <a class="btn btn-primary" href="order2">Place Order</a>
+        <button type="submit" class="btn btn-primary">Place Order</button>
     </form>
 
     <!--Bootstrap JS-->
